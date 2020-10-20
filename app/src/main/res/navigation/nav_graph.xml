@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/simpleFragment">
+    <fragment
+        android:id="@+id/simpleFragment"
+        android:name="com.thedung.motionlayoutdemo.fragments.SimpleFragment"
+        android:label="fragment_simple"
+        tools:layout="@layout/fragment_simple" >
+        <action
+            android:id="@+id/action_simpleFragment_to_notSimpleFragment"
+            app:destination="@id/notSimpleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notSimpleFragment"
+        android:name="com.thedung.motionlayoutdemo.fragments.NotSimpleFragment"
+        android:label="fragment_not_simple"
+        tools:layout="@layout/fragment_not_simple" />
+</navigation>
