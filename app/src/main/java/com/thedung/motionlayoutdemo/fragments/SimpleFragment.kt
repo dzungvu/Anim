@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.thedung.motionlayoutdemo.R
+import kotlinx.android.synthetic.main.fragment_simple.*
 
 class SimpleFragment : Fragment() {
 
@@ -24,6 +25,8 @@ class SimpleFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
+        btnNotSimple.setOnClickListener{
 
+        }
     }
 }
